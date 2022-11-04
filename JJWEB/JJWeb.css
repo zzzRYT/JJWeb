@@ -1,0 +1,127 @@
+@charset "utf-8";
+*{margin:0;padding:0;}
+#LOGO img{width:150px;display:block;margin:0 auto;} /* 대표로고 */
+
+ul, li, ol{list-style-type: none;}
+a{text-decoration: none; color:inherit;}
+
+.mainMenu {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  display:flex;
+  justify-content: center;
+  background-attachment: fixed;
+}
+
+.mainMenu > li {
+  width: 20%; /*20*5=100%*/
+  display:flex;
+  justify-content: center;
+  line-height: 40px;
+  background-color: #3494fb;
+}
+
+.mainMenu a {
+  color: #fff;
+}
+
+.subMenu > li {
+  line-height: 50px;
+  background-color: #3494fb;
+}
+
+.subMenu {
+  height: 0; 
+  overflow: hidden;
+}
+
+.mainMenu > li:hover{
+  background-color: #3494fb;
+  display:inline-block;
+  text-align: center;
+}
+
+.mainMenu>li:hover .subMenu{
+  height:250px;
+  background-color:#3494fb;
+  align-items: center;
+  text-align: center;
+}
+/* 여기까지가 네비게이션 바 작성 */
+h2{text-align: center;font-size: 50px;color:#3494fb}
+h2>div{/* dday로고 */
+  width:200px;
+  height:78px;
+  background-color: #d1e7ff;
+  border-radius:15px;
+  margin:0 auto;
+}
+.profile{
+  max-width: 60vw;
+  height:50px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  font-size:20px;
+  color:#d1e7ff;
+  margin:0 auto;
+  background-color: #3494fb;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.jj_img{
+  width: 400px;
+  height:400px;
+  background-image: url("사진/JJ.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:0 auto;
+}
+.wr_img{
+  width: 400px;
+  height:400px;
+  background-image: url("사진/WR.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:0 auto;
+}
+
+.jj_profile,.wr_profile{
+  width: 300px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-size: contain;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:0 auto;
+}
+.jj_profile{
+  background-image: url("사진/JJ.JPG");
+  margin-left: 20px;
+}
+.blur1{
+  background-color: rgba(255,255,255,.4);
+  padding:20px;
+  margin:30px;
+  backdrop-filter: blur(15px);
+}
+.wr_profile{
+  background-image: url("사진/WR.JPG");
+  margin-right: 20px;
+}
+.blur2{
+  background-color: rgba(255,255,255,.4);
+  padding:20px;
+  margin:30px;
+  backdrop-filter: blur(15px);
+}
+p{
+  position: right bottom;
+}
+
+
+
+
